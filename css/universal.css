@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    animation: fadeInSlide 0.3s ease;
+    width: 100vw;
+}
+
+header {
+    height: 20vh;
+}
+
+body {
+    background-image: url('../Assets/img/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 8vh;
+    width: 30vw;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    width: 25%;
+    height: 7vh;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 135%;
+    color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Adds smooth transition for color and size */
+}
+
+a:hover {
+    color: rgb(188, 123, 39);
+    /* Changes color on hover */
+    transform: scale(1.1);
+    /* Increases size slightly on hover */
+}
+
+@media only screen and (max-width: 1202px) {
+    nav {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 646px) {
+    nav {
+        width: 65vw;
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    nav {
+        width: 85vw;
+        left: 50%;
+    }
+}
+
+@font-face {
+    font-family: "mc";
+    src: url("../Assets/fonts/Minecraft.ttf") format("truetype");
+}
