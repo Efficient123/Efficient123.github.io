@@ -158,9 +158,7 @@ main {
     height: 100vh;          /* Full viewport height */
     overflow: hidden;       /* Prevents unwanted scroll during animation */
     position: relative;
-    opacity: 0;             /* Start invisible */
-    transform: translateY(-50px); /* Start slightly above */
-    animation: fadeInSlide 1s ease-in forwards;
+    opacity: 1; /* Start slightly above */
 }
 
 /* Keyframes for Fade-in and Slide */
