@@ -12,7 +12,7 @@
         -2px 0px 5px rgba(0, 255, 255, 0.7),
         2px 0px 10px rgba(0, 255, 255, 0.5);
     animation: moveLeftRight 0.8s ease-in-out infinite;
-    /* Apply the animation */
+    
 }
 
 .greeting {
@@ -23,85 +23,85 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: xx-large;
-    color: #9B59B6; /* Initial Cosmic Purple */
+    color: #9B59B6; 
     text-shadow: 
-        0 0 5px #9B59B6, /* Initial glow */
+        0 0 5px #9B59B6, 
         0 0 10px #9B59B6, 
         0 0 15px #9B59B6, 
         0 0 20px #8E44AD, 
         0 0 30px #8E44AD, 
-        0 0 40px #8E44AD; /* Initial glow */
+        0 0 40px #8E44AD; 
     text-align: center;
     animation: fadeInSlide 1s ease, colorChange 5s ease-in-out infinite;
 }
 
 @keyframes colorChange {
     0% {
-        color: #9B59B6; /* Cosmic Purple */
+        color: #9B59B6; 
         text-shadow: 
             0 0 5px #9B59B6, 
             0 0 10px #9B59B6, 
             0 0 15px #9B59B6, 
             0 0 20px #8E44AD, 
             0 0 30px #8E44AD, 
-            0 0 40px #8E44AD; /* Purple glow */
+            0 0 40px #8E44AD; 
     }
     25% {
-        color: #8E44AD; /* Deep Purple */
+        color: #8E44AD; 
         text-shadow: 
             0 0 5px #8E44AD, 
             0 0 10px #8E44AD, 
             0 0 15px #8E44AD, 
             0 0 20px #8E44AD, 
             0 0 30px #8E44AD, 
-            0 0 40px #8E44AD; /* Deep Purple glow */
+            0 0 40px #8E44AD; 
     }
     50% {
-        color: #A2D9FF; /* Light Sky Blue */
+        color: #A2D9FF; 
         text-shadow: 
             0 0 5px #A2D9FF, 
             0 0 10px #A2D9FF, 
             0 0 15px #A2D9FF, 
             0 0 20px #A2D9FF, 
             0 0 30px #A2D9FF, 
-            0 0 40px #A2D9FF; /* Sky Blue glow */
+            0 0 40px #A2D9FF; 
     }
     75% {
-        color: #FF6347; /* Cosmic Red */
+        color: #FF6347; 
         text-shadow: 
             0 0 5px #FF6347, 
             0 0 10px #FF6347, 
             0 0 15px #FF6347, 
             0 0 20px #FF6347, 
             0 0 30px #FF6347, 
-            0 0 40px #FF6347; /* Red glow */
+            0 0 40px #FF6347; 
     }
     100% {
-        color: #9B59B6; /* Back to Cosmic Purple */
+        color: #9B59B6; 
         text-shadow: 
             0 0 5px #9B59B6, 
             0 0 10px #9B59B6, 
             0 0 15px #9B59B6, 
             0 0 20px #8E44AD, 
             0 0 30px #8E44AD, 
-            0 0 40px #8E44AD; /* Purple glow */
+            0 0 40px #8E44AD; 
     }
 }
 
 @keyframes moveLeftRight {
     0% {
         transform: translateX(-50%) translateX(-40px);
-        /* Move left */
+        
     }
 
     50% {
         transform: translateX(-50%) translateX(40px);
-        /* Move right */
+        
     }
 
     100% {
         transform: translateX(-50%) translateX(-40px);
-        /* Move back to the left */
+        
     }
 }
 
