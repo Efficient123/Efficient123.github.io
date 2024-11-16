@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+}
+
+body {
+    background-image: url('../Assets/img/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 8vh;
+    width: 30vw;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    position: absolute; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    width: 25%;
+    height: 7vh;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-size: 135%;
+    color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease; /* Adds smooth transition for color and size */
+}
+
+a:hover {
+    color: rgb(188, 123, 39); /* Changes color on hover */
+    transform: scale(1.1); /* Increases size slightly on hover */
+}
+
+.skin {
+    height: 25vh;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skin:hover {
+    transform: scale(1.1);
+}
+
+.greeting {
+    width: 50vw;
+    height: 12vh;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centering element both vertically and horizontally */
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        2px 0px 5px rgba(0, 255, 255, 0.7),
+        -2px 0px 5px rgba(0, 255, 255, 0.7),
+        2px 0px 10px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    transform-origin: center;  /* Ensure scaling happens from the center */
+}
+
+main {
+    animation: fadeInSlide 1s ease; /* Attach the animation */
+    position: relative; /* Ensure positioning for the sliding effect */
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0; 
+        transform: translateY(-50px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+.qoute {
+    font-size: 9vh;
+    font-family: 'mc', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%); /* Remove scale initially */
+    text-shadow: 
+        2px 0px 5px rgba(0, 255, 255, 0.7),
+        -2px 0px 5px rgba(0, 255, 255, 0.7),
+        2px 0px 10px rgba(0, 255, 255, 0.5);
+    animation: moveLeftRight 0.8s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-50%) translateX(-40px); /* Move left */
+    }
+    50% {
+        transform: translateX(-50%) translateX(40px); /* Move right */
+    }
+    100% {
+        transform: translateX(-50%) translateX(-40px); /* Move back to the left */
+    }
+}
+
+
+@media only screen and (max-width: 1202px) {
+    nav {
+        width: 50vw;
+    }
+    .qoute {
+        text-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 646px) {
+    nav {
+        width: 65vw;
+        left: 50%;
+    }
+    .skin {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    nav {
+        width: 85vw;
+        left: 50%;
+    }
+}
+  
+@font-face {
+    font-family: "mc"; 
+    src: url("../Assets/fonts/Minecraft.ttf") format("truetype");
+}
