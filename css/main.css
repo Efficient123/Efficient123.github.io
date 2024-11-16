@@ -26,6 +26,7 @@ nav {
     left: 50%; 
     transform: translateX(-50%); 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
 }
 
 ul {
@@ -75,22 +76,80 @@ a:hover {
 
 .greeting {
     width: 50vw;
-    height: 12vh;
+    height: fit-content;
     position: absolute;
     top: 200px;
     left: 50%;
-    transform: translate(-50%, -50%);  /* Centering element both vertically and horizontally */
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: xx-large;
-    color: rgb(255, 255, 255);
+    color: #9B59B6; /* Initial Cosmic Purple */
     text-shadow: 
-        2px 0px 5px rgba(0, 255, 255, 0.7),
-        -2px 0px 5px rgba(0, 255, 255, 0.7),
-        2px 0px 10px rgba(0, 255, 255, 0.5);
+        0 0 5px #9B59B6, /* Initial glow */
+        0 0 10px #9B59B6, 
+        0 0 15px #9B59B6, 
+        0 0 20px #8E44AD, 
+        0 0 30px #8E44AD, 
+        0 0 40px #8E44AD; /* Initial glow */
     text-align: center;
-    transform-origin: center;  /* Ensure scaling happens from the center */
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    animation: fadeInSlide 1s ease, colorChange 10s ease-in-out infinite; /* Added color and glow change animation */
 }
+
+@keyframes colorChange {
+    0% {
+        color: #9B59B6; /* Cosmic Purple */
+        text-shadow: 
+            0 0 5px #9B59B6, 
+            0 0 10px #9B59B6, 
+            0 0 15px #9B59B6, 
+            0 0 20px #8E44AD, 
+            0 0 30px #8E44AD, 
+            0 0 40px #8E44AD; /* Purple glow */
+    }
+    25% {
+        color: #8E44AD; /* Deep Purple */
+        text-shadow: 
+            0 0 5px #8E44AD, 
+            0 0 10px #8E44AD, 
+            0 0 15px #8E44AD, 
+            0 0 20px #8E44AD, 
+            0 0 30px #8E44AD, 
+            0 0 40px #8E44AD; /* Deep Purple glow */
+    }
+    50% {
+        color: #A2D9FF; /* Light Sky Blue */
+        text-shadow: 
+            0 0 5px #A2D9FF, 
+            0 0 10px #A2D9FF, 
+            0 0 15px #A2D9FF, 
+            0 0 20px #A2D9FF, 
+            0 0 30px #A2D9FF, 
+            0 0 40px #A2D9FF; /* Sky Blue glow */
+    }
+    75% {
+        color: #FF6347; /* Cosmic Red */
+        text-shadow: 
+            0 0 5px #FF6347, 
+            0 0 10px #FF6347, 
+            0 0 15px #FF6347, 
+            0 0 20px #FF6347, 
+            0 0 30px #FF6347, 
+            0 0 40px #FF6347; /* Red glow */
+    }
+    100% {
+        color: #9B59B6; /* Back to Cosmic Purple */
+        text-shadow: 
+            0 0 5px #9B59B6, 
+            0 0 10px #9B59B6, 
+            0 0 15px #9B59B6, 
+            0 0 20px #8E44AD, 
+            0 0 30px #8E44AD, 
+            0 0 40px #8E44AD; /* Purple glow */
+    }
+}
+
 
 main {
     animation: fadeInSlide 1s ease; /* Attach the animation */
@@ -148,7 +207,7 @@ main {
         text-align: center;
     }
     .greeting {
-        top: 495px;
+        top: 430px;
     }
 }
 
@@ -166,6 +225,9 @@ main {
     nav {
         width: 85vw;
         left: 50%;
+    }
+    .qoute {
+        font-size: 7vh;
     }
 }
   
