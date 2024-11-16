@@ -152,21 +152,26 @@ a:hover {
 
 
 main {
-    animation: fadeInSlide 1s ease-in forwards; /* Ensure final state is retained */
-    transform: translateY(0); /* Set default transform to prevent misplacement */
-    opacity: 1; /* Default opacity */
-    position: relative; /* Positioning for the slide effect */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 100vh;          /* Full viewport height */
+    overflow: hidden;       /* Prevents unwanted scroll during animation */
+    position: relative;
+    opacity: 0;             /* Start invisible */
+    transform: translateY(-50px); /* Start slightly above */
+    animation: fadeInSlide 1s ease-in forwards;
 }
 
-/* Fade-in and slide animation */
+/* Keyframes for Fade-in and Slide */
 @keyframes fadeInSlide {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-50px); /* Start above */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* End in place */
     }
 }
 
