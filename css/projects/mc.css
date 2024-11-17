@@ -2,13 +2,18 @@
     font-family: 'mc', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 .containerVes {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     height: 30vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
 }
 
 .versionBox {
@@ -88,6 +93,7 @@
 @media only screen and (max-width: 1083px) {
     .containerVes {
         flex-direction: column;
+        width: fit-content;
         height: 59.5vh;
         margin-left: 20%;
     }

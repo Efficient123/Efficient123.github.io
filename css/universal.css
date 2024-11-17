@@ -7,6 +7,7 @@ main {
     position: relative;
     animation: fadeInSlide 0.3s ease;
     width: 100vw;
+    height: 100vh; 
 }
 
 header {
@@ -17,17 +18,20 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 100vh; 
 }
 
 video {
     position: fixed;
     top: 50%;
+    transform: scale(1.7);
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100vw;
-    min-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    object-position: center; 
+    z-index: -1; 
 }
 
 nav {
@@ -71,14 +75,11 @@ a {
     color: bisque;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Adds smooth transition for color and size */
 }
 
 a:hover {
     color: rgb(188, 123, 39);
-    /* Changes color on hover */
     transform: scale(1.1);
-    /* Increases size slightly on hover */
 }
 
 @media only screen and (max-width: 1202px) {
