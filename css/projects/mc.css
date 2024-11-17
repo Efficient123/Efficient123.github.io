@@ -2,12 +2,6 @@
     font-family: 'mc', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    background-image: url('../../Assets/img/mcbg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .containerVes {
     width: 100%;
     height: 30vh;
@@ -88,5 +82,11 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1083px) {
+    .containerVes {
+        flex-direction: column;
     }
 }
