@@ -14,8 +14,20 @@ header {
 }
 
 body {
-    background-image: url('../Assets/img/bg.jpg');
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 nav {
