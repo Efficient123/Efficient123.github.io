@@ -1,7 +1,6 @@
 html, body {
     height: 100%;  
-    margin: 0; 
-    overflow-y: auto;    
+    margin: 0;   
 }
 
 .container {
@@ -125,4 +124,7 @@ html, body {
         width: 90%;
         margin-left: 5%;
     }
+    html, body {
+        overflow-y: auto;  
+    } 
 }
