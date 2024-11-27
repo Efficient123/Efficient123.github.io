@@ -19,13 +19,14 @@ body {
     padding: 0;
     overflow: hidden;
     height: 100vh; 
+    background-image: url('../Assets/img/bg.jpg');
+    background-size: cover;
 }
 
 video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw; 
     height: 100vh; 
     object-fit: cover; 
