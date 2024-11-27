@@ -1,7 +1,6 @@
 html, body {
     height: 100%;  
     margin: 0; 
-    overflow-y: auto;    
 }
 
 .container {
@@ -127,5 +126,8 @@ html, body {
     .showroom {
         width: 90%;
         margin-left: 5%;
+    }
+    html, body {
+        overflow-y: auto;
     }
 }
